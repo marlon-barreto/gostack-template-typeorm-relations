@@ -15,9 +15,9 @@ export default class CreatProducts1591901420493 implements MigrationInterface {
           },
           { name: 'name', type: 'varchar', isUnique: true },
 
-          { name: 'price', type: 'money' },
+          { name: 'price', type: 'numeric', precision: 10, scale: 2 },
 
-          { name: 'quantity', type: 'integer' },
+          { name: 'quantity', type: 'int' },
           {
             name: 'created_at',
             type: 'timestamp',

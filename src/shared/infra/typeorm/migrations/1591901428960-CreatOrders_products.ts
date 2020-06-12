@@ -15,13 +15,13 @@ export default class CreatOrdersProducts1591901428960
             default: 'uuid_generate_v4()',
           },
 
-          { name: 'product_id', type: 'uuid', isUnique: true },
+          { name: 'product_id', type: 'uuid' },
 
-          { name: 'order_id', type: 'uuid', isUnique: true },
+          { name: 'order_id', type: 'uuid' },
 
-          { name: 'price', type: 'money' },
+          { name: 'price', type: 'numeric', precision: 10, scale: 2 },
 
-          { name: 'quantity', type: 'integer' },
+          { name: 'quantity', type: 'int' },
           {
             name: 'created_at',
             type: 'timestamp',
